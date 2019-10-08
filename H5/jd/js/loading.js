@@ -1,4 +1,4 @@
-function netase_loadimg(imgs,callback){
+function netease_loadimg(imgs,callback){
     if(!imgs){return false};
     var img=[];
     var len=imgs.length;

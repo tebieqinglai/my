@@ -37,7 +37,7 @@ $(function(){
 
     //擦一擦
     var gua = 1;
-    var botm_img = 'img/8.jpg';
+    var botm_img = '../img/8.jpg';
 
     var body_width = $(window).width();
     var body_width = $(window).width();

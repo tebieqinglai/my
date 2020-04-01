@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        img{
+            width:600px;height:500px;
+        }
+        #canvas{
+            position: absolute;top:0;left:0;
+        }
+        #canvas1{
+            position: absolute;top:710px;left:110px;
+        }
+		#canvas{
+			position:absolute;
+			top:0;
+			left:0;
+		}
+    </style>
+</head>
+<body>
+<div>
+	<img id="img" src="111.jpeg" alt="">
+    <canvas id="canvas" width = "800" height="600"></canvas>
+</div>
+<script src="Scratch.js"></script>
+<script>
+    var scratch = new Scratch("canvas",{ //第一个参数是canvas的id,,其他都可传可不传
+        width : 800,//画布的宽度，，不传为默认宽度
+        height: 600,//画布的高度，，不传为默认宽度
+        top : 0,//画布的高度偏移量。。不传为默认距离body的高度
+        left : 0,//画布的宽度偏移量。。不传为默认距离body的宽度
+        color: "red",//画布的颜色
+        // url : "/uploadImg/images/11111111.jpg",//上传图片路径，如果上传，则color无效
+        handWidth : 50,//画布的手势宽度
+        percent : 0.5,//完成百分比，，默认 百分之50
+        time : 20,//达到完成条件，弹出success 时间 默认200ms
+        autoClick : true,// true 达成条件 canvas全部透明，，false 不全部透明 ，可在回调函数里面自行关闭
+        success : function(){//完成百分比之后回调函数，
+            console.log("完成了")
+        }
+    })
+    scratch.init()//必须执行一次初始化
+    // scratch.initCanvas() //还原画布
+
+
+</script>
+</body>
+
+</html>

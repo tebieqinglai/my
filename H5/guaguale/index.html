@@ -24,7 +24,7 @@
 </head>
 <body>
 <div>
-	<img id="img" src="111.jpeg" alt="">
+	<img id="img" src="" alt="">
     <canvas id="canvas" width = "800" height="600"></canvas>
 </div>
 <script src="Scratch.js"></script>
@@ -47,6 +47,9 @@
     scratch.init()//必须执行一次初始化
     // scratch.initCanvas() //还原画布
 
+    setTimeout(function(){
+        document.getElementById('img').src='1111.jpeg'
+    },10)
 
 </script>
 </body>
